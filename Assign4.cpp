@@ -26,14 +26,14 @@ class Graph{
 
         int minKey(int key[], bool mst[]){
             int min = INT_MAX;
-            int minidx;
+            int min_index;
             for(int i = 0; i < V; i++) {
                 if(!mst[i] && key[i] < min) {
                     min = key[i];
-                    minidx = i;
+                    min_index = i;
                 }
             }
-            return minidx;
+            return min_index;
         }
 
         void PrimMST() {
