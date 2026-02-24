@@ -36,7 +36,7 @@ class Graph{
             return min_index;
         }
 
-        void PrimMST() {
+        void PrimsMST() {
             int key[Max];
             int parent[Max];
             bool visit[Max];
@@ -89,7 +89,7 @@ int main(){
         g.addEdge(u,v,w);
     }
 
-    g.PrimMST();
+    g.PrimsMST();
 
     return 0;
 }
